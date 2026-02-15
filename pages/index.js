@@ -1,5 +1,5 @@
-function Home () {
-    return <h1>Colatix superior, amoreco Matheus</h1>
+function Home() {
+  return <h1>Colatix superior, amoreco Matheus</h1>;
 }
 
-export default Home
+export default Home;
