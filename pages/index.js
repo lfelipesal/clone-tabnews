@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -8,10 +10,13 @@ export default function Home() {
           Callimora is preparing something special for you! 💫
         </p>
 
-        <img
+        <Image
           src="/artist.gif"
           alt="Ilustração animada de construção do site"
+          width={480}
+          height={360}
           style={styles.gif}
+          priority
         />
       </div>
 
