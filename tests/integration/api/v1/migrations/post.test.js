@@ -1,4 +1,3 @@
-import database from "infra/database.js";
 import orchestrator from "tests/orchestrator.js";
 
 beforeAll(async () => {
@@ -8,7 +7,7 @@ beforeAll(async () => {
 
 describe("POST /api/v1/migrations", () => {
   describe("Anonymous user", () => {
-    describe("Running pending migrations ", () => {
+    describe("Running pending migrations", () => {
       test("For the first time", async () => {
         const response1 = await fetch(
           "http://localhost:3000/api/v1/migrations",
